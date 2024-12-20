@@ -1,17 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; /* Full height */
+}
+
 body {
   background-image: url(img/hatterkep.png);
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
 }
 
+/* Example header (optional) */
 .fejlec {
   background-color: #9465d0;
   border-radius: 10px;
   width: 55%;
-  padding: 0; /* Remove padding */
+  padding: 0;
   display: flex;
-  align-items: center; /* Center content vertically */
+  align-items: center;
   margin: auto;
   position: relative;
+  flex: 0 0 auto;
+  /* ...rest of header styles... */
 }
 
 .fejlec img {
@@ -44,7 +59,7 @@ body {
   flex: 1;
   display: flex;
   gap: 0;
-  align-items: center; /* Center images vertically */
+  align-items: center;
 }
 
 .pelda {
@@ -57,21 +72,113 @@ body {
   height: auto;
   display: block;
 }
+
 .content {
+  width: 60%;
+  margin: 10px auto;
+  flex: 1;
+  display: flex;
   background-color: #9465d0;
   border-radius: 10px;
-  width: 50%;
-  max-width: 99%;
-  margin: 20px auto;
-  padding: 10px;
-  display: flex;
+  padding: 1px;
   position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.fb-page {
-  width: 100% !important;
+
+.content iframe {
+  width: 100%;
+  height: 100%;
+  border:#9465d0 10px solid;
+  border-radius: 10px;
+  display: block;
 }
 
-.fb-page blockquote {
-  padding: 5px;
+
+/* Ensure the menu container is properly styled */
+.menu {
+  background-color: #9465d0;
+  border-radius: 10px;
+  width: 200px;
+  margin: 0 0 0 10px;           /* Remove margin */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Remove default list styles and ensure full width */
+.menu ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Style each list item */
+.menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu li:first-child {
+  border-radius: 10px;
+}
+.menu li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+/* Style the anchor tags to fill the entire list item */
+.menu a {
+  display: block;
+  width: 100%;
+  padding: 15px 0;       /* Increased vertical padding for better click area */
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Apply hover effect to the anchor tags */
+.menu a:hover {
+  background-color: #f096f0;
+  border-radius: 0; /* Remove border-radius on hover to fill entire width */
+}
+
+/* Optional: Adjust font for better readability */
+.menu a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+/* Optional: Add active state styling */
+.menu a.active {
+  background-color: #f096f0;
+  border-radius: 0;
+}
+
+.menu li:hover {
+  background-color: #f096f0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #9465d0;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0.8;
+  visibility: hidden;
 }
