@@ -1,0 +1,10 @@
+.content {
+    background:none;
+}
+.content iframe {
+    width: 100%;
+    height: 100%;
+    border:#9465d0 10px solid;
+    border-radius: 10px;
+    display: block;
+  }

@@ -1,0 +1,152 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url(../img/hatterkep.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.fejlec {
+  background-color: #9465d0;
+  border-radius: 10px;
+  width: 80%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  flex: 0 0 auto;
+
+}
+
+.fejleckepek {
+  height: auto;
+  display: flex;
+}
+
+#logo {
+  width: 50%;
+  flex: 1;
+  padding: 10px;
+}
+
+#fejlecimg {
+  float: right;
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pelda-container {
+  flex: 1;
+  display: flex;
+  gap: 0;
+  align-items: center;
+}
+
+.pelda {
+  flex: 1;
+  margin: 0;
+}
+
+.pelda img {
+  width: 90%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  width: 90%;
+  margin: 10px auto;
+  flex: 1;
+  display: flex;
+  border-radius: 10px;
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  background-color: #9465d0;
+}
+.content iframe {
+  width: 100%;
+  height: 150%;
+  border:#9465d0 10px solid;
+  border-radius: 10px;
+  display: block;
+  }
+
+.menu {
+  background-color: #9465d0;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.menu li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.menu a {
+  display: block;
+  width: 100%;
+  padding: 15px 0; 
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.menu a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+
+.menu li:hover {
+  background-color: #f096f0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content p {
+  margin: 0;
+}
