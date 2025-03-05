@@ -1,7 +1,10 @@
 function redirectIfMobile() {
     if (window.innerWidth < window.innerHeight) {
-        if (window.location.pathname === "/index.html") {
-            window.location.href = "http://192.168.1.117:5500/mobile/index.html";
+        let currentPath = window.location.pathname;
+
+        // Csak akkor irányítson át, ha nem a mobil oldalon vagyunk
+        if (!currentPath.startsWith("/mobile/")) {
+            window.location.href = "http://192.168.1.117:/mobile" + currentPath;
         }
     }
 }
