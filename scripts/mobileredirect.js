@@ -1,10 +1,15 @@
 function redirectIfMobile() {
     if (window.innerWidth < window.innerHeight) {
-        let currentUrl = window.location.href;
+        let currentPath = window.location.pathname;
 
-        // Csak akkor irányítson át, ha még nem a mobil verzión vagyunk
-        if (!currentUrl.includes("/mobile")) {
-            window.location.href = currentUrl + "/mobile";
+        // Ellenőrizzük, hogy már nem vagyunk-e a mobil verzión
+        if (!currentPath.startsWith("/mobile/")) {
+            let newPath = "/mobile" + currentPath;
+
+            // Dupla perjelek elkerülése
+            newPath = newPath.replace("//", "/");
+
+            window.location.href = newPath;
         }
     }
 }
