@@ -1,5 +1,6 @@
 .content {
     background:none;
+    margin: auto;
 }
 .content iframe {
     width: 100%;
@@ -7,4 +8,5 @@
     border:#9465d0 10px solid;
     border-radius: 10px;
     display: block;
+    margin: auto;
   }
