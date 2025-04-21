@@ -1,5 +1,5 @@
 function redirectIfDesktop() {
-    if (window.innerWidth >= 1164 && window.innerWidth > window.innerHeight) {
+    if (window.innerWidth > 1164 && window.innerWidth > window.innerHeight) {
         let currentPath = window.location.pathname;
 
         if (currentPath.startsWith("/mobile/")) {
